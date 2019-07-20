@@ -234,3 +234,73 @@ A _public load balancer_ maps the public ip address and port number of incoming 
 An _internal load balancer_ redirects traffic only to resources inside of a virtual network.  
 
 #### Virtual Prive Network (VPN) Gateway
+VPN Gateway allows you to send encrypted traffic between an Azure virtual network and an on-premise location over the public internet.  Only one VPN Gateway can be assigned to an azure virtual network, however you can create multiple connections to the same gateway.  A VPN Gateway is composed of two or more VMs that are deployed to a gateway subnet.  You can also create an IP SEC or VPN tunnel that connects two VPN gateways together (referred to a v-net to v-net connection).  You can also create a cross-prem IPSEC between an on-prem gateway referred to a _site-to-site_ vpn gateway.  In addition you can create a point to site VPN connection which is referred to a VPN over IPV2 or SSTP connection.
+
+Support VPN Technologies
+1) Site-to-site
+2) Multi-site
+3) Point-to-Site
+4) VNet-to-VNet
+5) ExpressRoute
+
+#### Content Delivery Networks (CDNs)
+The _Azure Content Delivery Network_ is a distributed network of servers that can efficiently deliver web content to users.  They store _cached_ content on edge serers in point-of-presence (POP) locations, thus minimizing latency.  
+
+Benefits: 
+1) Better performance and improved user experience for end-to-end users.
+2) Large scaling to better handle instantaneous high loads.
+3) Distribution of user requests.
+
+Key Features:
+1) Dynamic Site Acceleration
+2) CDN caching rules
+3) HTTPS custom domain support
+4) Azure diagnostic logs
+5) File compression
+6) Geo-filtering
+
+### Azure Storage
+
+#### Blob Storage
+Microsoft's object storage (unstructured data) solution for cloud optimized storing of massive amounts of data.
+
+Uses:
+1) Serving images or documents directly to a browser
+2) Storing files for distributed access
+3) Streaming video and audio
+4) Writing to log files
+5) Storing data for backup and restore
+6) Storing data for analysis
+
+Azure blog storage is accessible through REST api, CLI, powershell, and Azure storage client library.
+
+Resources:
+_Storage account:_ provides unique namespace in Azure for data.
+_Container:_ Organizes a set of blobs, similar to a directory in a file system (similar to a file directory)
+_Blob:_ Block blob (text/binary data), append blob (optimized for append operations), page blob (store random access files up to 8TB in size)
+
+#### Disk Storage
+Virtual machines in Azure use disks as a place to store an OS, applications, and data.  All Azure VMs have at least two disks (A windows OS disk, and a temporary disk).  Both the OS disk and the image are virtual hard disks (VHDs) stored in an Azure storage account.
+
+Types of disks
+1) _Operating System Disk:_ every virtual machine has one that stores the OS. (C:)
+2) _Temporary Disk:_ provides short term storage, may be lost when VM is redployed (D:)
+3) _Data Disk:_ Stores application data (<Letter>:)
+
+Performance Tiers:
+1) Standard HDD Disks
+2) Standard SSD Disks (Recommended for most workloads)
+3) Premium SSD Disks
+
+#### File Storage
+Azure files provide a file share in the cloud that can be mounted concurrently by cloud or on-prem machines.  Azure file shares can be cached on windows servers with azure file sync.
+
+Benefits:
+1) Shared access
+2) Fully Managed
+3) Scripting and Tooling
+4) Resiliency
+5) Familiar Programmability
+
+#### Archive Storage
+Lowest files storage cost, but higher cost for accessing data.  Blobs that are in archive can't be read, copied, overwritten, or modified.  Typical usage scenarios include long-term backup, secondary backup, and archival datasets.  i.e. security camera footage, old xrays/mris, etc.
