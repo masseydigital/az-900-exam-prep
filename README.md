@@ -1,5 +1,5 @@
 # az-900-exam-prep
-AZ-900 Azure Fundamentals Exam Prep Repo
+AZ-900 Azure Fundamentals Exam Prep Repository
 
 ## Cloud Benefits
 
@@ -10,7 +10,7 @@ _Availability_ itself refers to the ability of end users to actually access the 
 
 A _load balancer_ is one example of a resource that provides high availability.
 
-_Azure Load Balancers_ provide high availability for services, support inbound and outbound scenarios, proivde low latency and throughput, and scale up to millions of flows for all TCP and UDP applications.
+_Azure Load Balancers_ provide high availability for services, support inbound and outbound scenarios, provide low latency and throughput, and scale up to millions of flows for all TCP and UDP applications.
 
 ### Scalability
 _Scalability refers to the idea oof a system in which every app or piece of infrastructure can be expanded to support increased workflows. i.e. a web application that goes from having a few users to a hundred thousand users.
@@ -22,7 +22,7 @@ There are four general areas that scalability can refer to:
 4) Network I/O
 
 There are two main ways of scaling an application:
-1) Horizontal (wide): adding more resources to an existing instance, i.e. adding a server and implementing a load balancer.  Scaling out is generally considered more difficult due to the maintenance of updates, secuirty settings, etc. for multiple hardware components.
+1) Horizontal (wide): adding more resources to an existing instance, i.e. adding a server and implementing a load balancer.  Scaling out is generally considered more difficult due to the maintenance of updates, security settings, etc. for multiple hardware components.
 2) Vertical (up): adding more power to an existing instance, i.e. adding more memory, faster storage, more powerful cpu, etc.
 
 _Azure Virtual Machine Scale Sets_ are one example of scaling that Azure provides as part of the service offering.
@@ -30,10 +30,10 @@ _Azure Virtual Machine Scale Sets_ are one example of scaling that Azure provide
 ### Elasticity
 _Elasticity_ refers to the ability to scale up and then scale back down.  Elasticity helps ensure you are using the resources you need, and effective management of resources saves you money.
 
-Azure allows you to autoscale resources by setting thresholds for traffic, what resources to provision, and how long to re-evalutate the thresholds.
+Azure allows you to auto-scale resources by setting thresholds for traffic, what resources to provision, and how long to re-evaluate the thresholds.
 
 ### Agility
-_Agility_ is the ability to rapidly change infrastructure requirements to meet operational needs.  With Azure and other cloud resources, companies can rapidly adjust their infrastructure to conceieve, plan, and deploy applications within days.
+_Agility_ is the ability to rapidly change infrastructure requirements to meet operational needs.  With Azure and other cloud resources, companies can rapidly adjust their infrastructure to conceive, plan, and deploy applications within days.
 
 ### Fault Tolerance
 _Fault Tolerance_ refers to the ability of an infrastructure to continue providing service after one or more of its components have failed.
@@ -61,7 +61,7 @@ Includes consumables such as printer cartridges, paper, and electricity.  Also m
 Infrastructure as a service is having instant computing resources that can be scaled up or down depending on your requirements.  Infrastructure are servers, switches, and other computing resources that are needed to run some software.  IaaS is usually used in scenarios where you want to test and develop new methodologies since you can quickly gain necessary resources until you can figure out what you need.  It also helps with website hosting and storage backup, and recovery.  
 
 Benefits of IaaS:
-1) Eliminates captial expenditure and reduces ongoing cost by providing leased services and only what the company needs.
+1) Eliminates capital expenditure and reduces ongoing cost by providing leased services and only what the company needs.
 2) Improves business continuity and disaster recovery through use of recovery services and multiple regions.
 3) Allows organizations to innovate rapidly by providing services immediately
 4) Allows businesses to shift more quickly to emerging business conditions, and focus on core business.
@@ -73,12 +73,12 @@ When to use IaaS:
 3) You are a rapidly growing company; unsure of infrastructure needs
 
 ### Platform-as-a-Service (PaaS)
-Platform as a Service (Paas) is a complete development environment in the cloud.  It includes servers, storage, and networking, but also includes middleware such as OS's.
+Platform as a Service (PaaS) is a complete development environment in the cloud.  It includes servers, storage, and networking, but also includes middle-ware such as OS's.
 
-It is designed to support the complete web application lifecycle, avoid the expense of buying and managing software licenses, and gives you the ability to manage applications and services while the cloud provider manages the provisioning.
+It is designed to support the complete web application life cycle, avoid the expense of buying and managing software licenses, and gives you the ability to manage applications and services while the cloud provider manages the provisioning.
 
 Common PaaS scenarios include:
-1) Development Framework: provides framework developers can use to create cloud based applicaions.
+1) Development Framework: provides framework developers can use to create cloud based applications.
 2) Analytics and Business Intelligence: 
 3) Additional Services
 
@@ -86,10 +86,10 @@ Advantages of PaaS:
 1) Cuts coding time from built-in services
 2) Add development capabilities without adding staff
 3) Develop for multiple platforms more easily
-4) Use sophisticated tools more affordablys
+4) Use sophisticated tools more affordable
 5) Can support geographically distributed development teams
-6) Efficiently manage application lifecycle through built-in services
-
+6) Efficiently manage application life cycle through built-in services
+ 
 When to use PaaS:
 1) Multiple developers/teams working on the same project
 2) Wish to be able to create your own customized applications
@@ -127,7 +127,7 @@ Advantages:
 6) High reliability
 
 ### Private Cloud
-Used for resources exclusively by one business or organization.  Can be physically located at organization's on-site datacenter, or can be hosted by a third-party service provider. Private clouds are generally located on-premise.  Private cloud is more secure than public cloud since security requirements are defined by the organization.
+Used for resources exclusively by one business or organization.  Can be physically located at organization's on-site data center, or can be hosted by a third-party service provider. Private clouds are generally located on-premise.  Private cloud is more secure than public cloud since security requirements are defined by the organization.
 
 ### Hybrid Cloud
 The hybrid cloud is the best of both worlds.  It utilizes both on-prem and public clouds.  Data and apps can move between private and public clouds.  _Cloud bursting_ allows applications to "burst" into public cloud when demand rises above a threshold.
@@ -135,7 +135,7 @@ The hybrid cloud is the best of both worlds.  It utilizes both on-prem and publi
 ## Core Azure Architectural Components
 
 ### Azure Regions
-An _azure region_ is a set of data centers that are connected within a latency-defined perimeter network.  As of this tutorial, there are 42 regions aroudn the world with an additional 12 announced.  _Azure Geographies_ are areas of the world that contain at least one Azure Region.  _Regional Pairs_ are two regions that are connected in the same geography.  This allows Azure to provide updates that do not shut down a region.  At least one region in each pair will be prioritized for recovery.  
+An _azure region_ is a set of data centers that are connected within a latency-defined perimeter network.  As of this tutorial, there are 42 regions around the world with an additional 12 announced.  _Azure Geographies_ are areas of the world that contain at least one Azure Region.  _Regional Pairs_ are two regions that are connected in the same geography.  This allows Azure to provide updates that do not shut down a region.  At least one region in each pair will be prioritized for recovery.  
 
 ### Availability Zones
 _Azure Availability Zones_ are ne or more physical locations within an Azure Region that provides independent power, cooling, and networking.  There are a minimum of (3) separate zones in all enabled regions.  The purpose of this is to protect applications from datacenter failures.
@@ -144,7 +144,7 @@ _Azure Availability Zones_ are ne or more physical locations within an Azure Reg
 An _Azure Resource Group_ holds related resources for an Azure solution.  Developers choose which resource group resources go into.  Each resource can only exist in one resource group.
 
 Best practices for resource groups:
-1) All resources should share the same lifecycle
+1) All resources should share the same life cycle
 2) Use resource groups to scope access control
 
 _Azure Resource Manager_ enables you to work with resources in a group. It provides security, auditing, and tagging features.
@@ -174,14 +174,14 @@ Considerations:
 5) Number that you want
 6) Operating system
 7) Configuration
-8) Related reources (i.e. network requirements)
+8) Related resources (i.e. network requirements)
 
 #### VM Scale Sets
 Allow you to create and manage a group of identical, load balanced VMs.  Number of VM's can automatically increase or decrease on demand.  They provide high-availability since applications can be distributed across multiple instances.  Provide management capabilities for applications across VMs.
 
 Benefits
 1) Easy to create multiple VMs
-2) High Availability and Resiliancy
+2) High Availability and Resiliency
 3) Scalability
 
 #### Azure App Service
@@ -233,7 +233,7 @@ A _public load balancer_ maps the public ip address and port number of incoming 
 
 An _internal load balancer_ redirects traffic only to resources inside of a virtual network.  
 
-#### Virtual Prive Network (VPN) Gateway
+#### Virtual Private Network (VPN) Gateway
 VPN Gateway allows you to send encrypted traffic between an Azure virtual network and an on-premise location over the public internet.  Only one VPN Gateway can be assigned to an azure virtual network, however you can create multiple connections to the same gateway.  A VPN Gateway is composed of two or more VMs that are deployed to a gateway subnet.  You can also create an IP SEC or VPN tunnel that connects two VPN gateways together (referred to a v-net to v-net connection).  You can also create a cross-prem IPSEC between an on-prem gateway referred to a _site-to-site_ vpn gateway.  In addition you can create a point to site VPN connection which is referred to a VPN over IPV2 or SSTP connection.
 
 Support VPN Technologies
@@ -244,7 +244,7 @@ Support VPN Technologies
 5) ExpressRoute
 
 #### Content Delivery Networks (CDNs)
-The _Azure Content Delivery Network_ is a distributed network of servers that can efficiently deliver web content to users.  They store _cached_ content on edge serers in point-of-presence (POP) locations, thus minimizing latency.  
+The _Azure Content Delivery Network_ is a distributed network of servers that can efficiently deliver web content to users.  They store _cached_ content on edge servers in point-of-presence (POP) locations, thus minimizing latency.  
 
 Benefits: 
 1) Better performance and improved user experience for end-to-end users.
@@ -272,7 +272,7 @@ Uses:
 5) Storing data for backup and restore
 6) Storing data for analysis
 
-Azure blog storage is accessible through REST api, CLI, powershell, and Azure storage client library.
+Azure blob storage is accessible through REST api, CLI, powershell, and Azure storage client library.
 
 Resources:
 _Storage account:_ provides unique namespace in Azure for data.
@@ -284,7 +284,7 @@ Virtual machines in Azure use disks as a place to store an OS, applications, and
 
 Types of disks
 1) _Operating System Disk:_ every virtual machine has one that stores the OS. (C:)
-2) _Temporary Disk:_ provides short term storage, may be lost when VM is redployed (D:)
+2) _Temporary Disk:_ provides short term storage, may be lost when VM is redeployed (D:)
 3) _Data Disk:_ Stores application data (<Letter>:)
 
 Performance Tiers:
@@ -313,7 +313,7 @@ Azure CosmosDB is a globally distributed, multi-model database service.  It allo
 Benefits:
 1) Turnkey Global Distribution: Build highly responsive and highly available applications worldwide.
 2) Always On: Provides 99.999% high availability for both reads and writes
-3) Elastic Scalability of Throughpout and Storage: Elastically scale up from thousands to hundreds of millions of requests/second
+3) Elastic Scalability of Throughput and Storage: Elastically scale up from thousands to hundreds of millions of requests/second
 4) Guaranteed Low Latency: Less than 10-ms latencies for both reads and writes in the 99th Percentile.
 
 #### Azure SQL Database
@@ -330,94 +330,122 @@ The _Azure Database Migration Service_ enables seamless migration of existing da
 #### Azure SQL Data Warehouse
 SQL Data Warehouse is a _cloud-based enterprise data warehouse (EDW)_ that leverages _Massively Parallel Processing (MPP)_.  You can import data with a simple PolyBase T-SQL query and then run high-performance analytics.  It stores data into relational tables with columnar storage.  This reduces data storage costs, and improves query performance.  Once data is stored, you can run data analytics at massive scale.  
 
-### Other Azure Services
+## Other Azure Services
 
-#### Internet of Things (IoT)
+### Internet of Things (IoT)
+_IoT Hub_ is a managed service that serves as a central message hub between IoT devices.  You can connect virtually any device on IoT hub with communication from device to cloud and from cloud to device.  It also supports multiple messaging platforms.  IoT Hub allows you to scale solutions, secure communications, route device data, and integrate with other services.  It also allows you to configure your devices while making your solution highly available.  You can use the Azure IoT device SDK libraries to build applications that run on your devices.
 
-#### Big Data Analytics
+_IoT Central_ is a fully managed IoT SaaS solution.  
 
-#### Artifical Intelligence (AI)
+### Big Data Analytics
 
-#### Azure Logic Apps
+_HDInsight_ enables clusters of managed Hadoop instances.  It deploys and provisions Apache Hadoop clusters in the cloud.  And allows you to manage, analyze, and report on big data with high reliability and availability.  It uses the Hortonworks data platform hadoop instance.
 
-#### Azure CLI
+_Azure Data Lake Analytics_ is an on-demand analytics job service that simplifies big data.  It can handle jobs any scale instantly.
 
-#### Azure Powershell
+Benefits:
+1) Dynamic Scaling
+2) Integrates Seamlessly
+3) Works with all Azure data
 
-#### Azure Portal
+### Artificial Intelligence (AI)
+_Azure Machine Learning Service_ allows you to train, deploy, automate, and manage machine learning models.  It is a cloud-based environment that you can use to develop, train, test, deploy, manage, and track machine learning models.  It supports open source technologies and has support for rich tools.
 
-#### Azure Advisor
+_Azure Machine Learning Studio_ is a drag and drop tool that you can use to build, test, and deploy predictive analytics solutions.  It publishes models as web services, and provides an interactive, visual workspace to easily build, test, and iterate on a predictive analysis model.  There is no programming required.
 
-### Securing Network Connectivity in Azure
+### Azure Logic Apps
+Azure Logic Apps allow you to automate and orchestrate tasks, business process, and workflows.  Examples of workloads that can be automated with logic apps are processing & routing orders and moving files from an FTP server to Azure storage.
 
-#### Azure Firewall
+Azure Logic Apps allow you to visually build workflows with easy to use tools, get started faster with logic app templates, connect disparate systems across different environments, and provide first-class support for enterprise integration and B2B scenarios.
 
-#### Azure DDoS Protectin
+### Azure CLI
+Is Microsoft's cross-platform command-line experience for managing Azure resources.  You can use it in the browser with Azure Cloud Shell, or install it on MacOS, Linux, or Windows.  It is best used for building automation scripts that work against the Azure Resource Manager.
 
-#### Network Security Groups
+### Azure Powershell
+Azure Powershell provides a set of cmdlets that use the Azure Resource Manager model for managing your Azure resources.  It uses the .Net standard, and ads a new Az module to work with Azure.
 
-### Azure Identity Services
+### Azure Portal
+The Azure portal allows you to view all of your resources through one website.  You can personalize your Azure experience through the interface.  You can also use RBAC controls to provide users with need-to-use content.  It gives you visibility into billing.
 
-#### Authentication and Authorization
+### Azure Advisor
+Azure Advisor is a personalized cloud consultant.  It analyzes resource configuration and usage telemetry, and then recommends solutions.  It improves the cost effectiveness, performance, high availability, and security of Azure resources.  It will give you proactive, actionable, and personalized recommendations for resources.
 
-#### Azure Active Directory
+Four Recommendation Areas
+1) High Availability
+2) Security
+3) Performance
+4) Cost
 
-#### Azure Multi-Factor Authentication
+## Securing Network Connectivity in Azure
 
-### Azure Security Tools and Features
+### Azure Firewall
 
-#### Azure Security
+### Azure DDoS Protection
 
-#### Azure Key Vault
+### Network Security Groups
 
-#### Azure Information Protection
+## Azure Identity Services
 
-#### Azure Advanced Threat Protection
+### Authentication and Authorization
 
-### Azure Governance Methodologies
+### Azure Active Directory
 
-#### Azure Policies
+### Azure Multi-Factor Authentication
 
-#### Initiatives
+## Azure Security Tools and Features
 
-#### Role-Based Access Control (RBAC)
+### Azure Security
 
-#### Locks
+### Azure Key Vault
 
-#### Azure Advisor Security Assistance
+### Azure Information Protection
 
-### Monitoring and Reporting
+### Azure Advanced Threat Protection
 
-#### Azure Monitor
+## Azure Governance Methodologies
 
-#### Azure Service Health
+### Azure Policies
 
-### Privacy, Compliance, and Data Protection Standards
+### Initiatives
 
-#### GDPR
+### Role-Based Access Control (RBAC)
 
-#### ISO
+### Locks
 
-#### NIST
+### Azure Advisor Security Assistance
 
-#### Trust Center
+## Monitoring and Reporting
 
-#### Service Turst Portal
+### Azure Monitor
 
-#### Compliance Manager
+### Azure Service Health
 
-#### Azure Government Services
+## Privacy, Compliance, and Data Protection Standards
 
-### Azure Subscriptions
+### GDPR
 
-### Planning and Managment of Costs
+### ISO
 
-#### Azure Free Accounts
+### NIST
 
-#### Resource Pricing
+### Trust Center
 
-#### Pricing Calculator
+### Service Trust Portal
 
-### Support Options
+### Compliance Manager
 
-### Azure Service Level Agreements (SLAs)
+### Azure Government Services
+
+## Azure Subscriptions
+
+## Planning and Management of Costs
+
+### Azure Free Accounts
+
+### Resource Pricing
+
+### Pricing Calculator
+
+## Support Options
+
+## Azure Service Level Agreements (SLAs)
