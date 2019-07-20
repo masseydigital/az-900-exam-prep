@@ -304,3 +304,120 @@ Benefits:
 
 #### Archive Storage
 Lowest files storage cost, but higher cost for accessing data.  Blobs that are in archive can't be read, copied, overwritten, or modified.  Typical usage scenarios include long-term backup, secondary backup, and archival datasets.  i.e. security camera footage, old xrays/mris, etc.
+
+### Azure Databases
+
+#### CosmosDB
+Azure CosmosDB is a globally distributed, multi-model database service.  It allows you to elastically and independently scale throughput and storage.  It provides fast, single-digit millisecond data access through comprehensive service level agreements (SLAs).
+
+Benefits:
+1) Turnkey Global Distribution: Build highly responsive and highly available applications worldwide.
+2) Always On: Provides 99.999% high availability for both reads and writes
+3) Elastic Scalability of Throughpout and Storage: Elastically scale up from thousands to hundreds of millions of requests/second
+4) Guaranteed Low Latency: Less than 10-ms latencies for both reads and writes in the 99th Percentile.
+
+#### Azure SQL Database
+Azure SQL Database is a relational database-as-a-service (DBaaS) base don the Microsoft SQL service.  
+
+Deployment Options:
+1) Deploy as a single database
+2) Deploy as a pooled database in an elastic pool
+3) Deploy as part of a collection of databases known as a _managed instance_
+
+#### Azure Database Migration Service
+The _Azure Database Migration Service_ enables seamless migration of existing databases while minimizing downtime.  It integrates some of the functionality of existing tools into a highly available solution.  Any remediation must still be done by the user.  
+
+#### Azure SQL Data Warehouse
+SQL Data Warehouse is a _cloud-based enterprise data warehouse (EDW)_ that leverages _Massively Parallel Processing (MPP)_.  You can import data with a simple PolyBase T-SQL query and then run high-performance analytics.  It stores data into relational tables with columnar storage.  This reduces data storage costs, and improves query performance.  Once data is stored, you can run data analytics at massive scale.  
+
+### Other Azure Services
+
+#### Internet of Things (IoT)
+
+#### Big Data Analytics
+
+#### Artifical Intelligence (AI)
+
+#### Azure Logic Apps
+
+#### Azure CLI
+
+#### Azure Powershell
+
+#### Azure Portal
+
+#### Azure Advisor
+
+### Securing Network Connectivity in Azure
+
+#### Azure Firewall
+
+#### Azure DDoS Protectin
+
+#### Network Security Groups
+
+### Azure Identity Services
+
+#### Authentication and Authorization
+
+#### Azure Active Directory
+
+#### Azure Multi-Factor Authentication
+
+### Azure Security Tools and Features
+
+#### Azure Security
+
+#### Azure Key Vault
+
+#### Azure Information Protection
+
+#### Azure Advanced Threat Protection
+
+### Azure Governance Methodologies
+
+#### Azure Policies
+
+#### Initiatives
+
+#### Role-Based Access Control (RBAC)
+
+#### Locks
+
+#### Azure Advisor Security Assistance
+
+### Monitoring and Reporting
+
+#### Azure Monitor
+
+#### Azure Service Health
+
+### Privacy, Compliance, and Data Protection Standards
+
+#### GDPR
+
+#### ISO
+
+#### NIST
+
+#### Trust Center
+
+#### Service Turst Portal
+
+#### Compliance Manager
+
+#### Azure Government Services
+
+### Azure Subscriptions
+
+### Planning and Managment of Costs
+
+#### Azure Free Accounts
+
+#### Resource Pricing
+
+#### Pricing Calculator
+
+### Support Options
+
+### Azure Service Level Agreements (SLAs)
