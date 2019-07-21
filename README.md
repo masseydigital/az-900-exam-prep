@@ -379,73 +379,162 @@ Four Recommendation Areas
 ## Securing Network Connectivity in Azure
 
 ### Azure Firewall
+Azure Firewall is a cloud based network security service.  It's a fully stateful firewall as a service capability with high availability.  It uses a static ip address for resources.  
+
+Features:
+1) Application FQDN Filtering Rules
+2) Network Traffic Filtering Rules
+3) FQDN Tags
+4) Outbound SNAT support
+5) Inbound DNAT Support
+6) Azure Monitor Logging
 
 ### Azure DDoS Protection
+Distributed Denial of Service attacks are the most concerning attacks used by exhausting a system's resources.  This can be combined with application best practices to avoid DDoS attacks.  Azure DDoS protection can prevent Volumetric attacks, protocol attacks, and resource layer attacks.
 
-### Network Security Groups
+### Network Security Groups (NSG)
+Azure Network Security Groups allow you to filter network traffic by controlling inbound/outbound network traffic.  NSG will provide 3 outbound and 3 inbound rules by default.
 
 ## Azure Identity Services
 
 ### Authentication and Authorization
+_Authentication:_ the act of validating that users are who they claim to be. i.e. entering a pin, username and password, biometrics
+_Authorization:_ the process of providing the user specific permissions to access resources or functions
 
 ### Azure Active Directory
+_Azure Active Directory_ is Azure's cloud-based Identity and Access Management (IAM) service.  It allows users to sign-in and access internal and external resources.  Azure AD is intended for IT Admins, App Developers, Office 365 subscribers, etc. Azure AD has free and paid pricing tiers.
 
 ### Azure Multi-Factor Authentication
+_Multi-Factor Authentication (MFA)_ requires two or more authentication methods to gain access to a system.  They generally break down to having _Something you know_, _Something you have_, and _Something you are_.  
 
 ## Azure Security Tools and Features
 
 ### Azure Security
+Containing many different operating systems, programming languages, frameworks, etc. Azure contains many different security methods to help ensure customers are developing secure apps.
+
+Four Security Areas:
+1) Secure Platform: Internal audits, mandatory security training, penetration testing
+2) Compliance: Trust Center, Common Controls Hub, Cloud Services Due Diligence Checklist
+3) Privacy & Controls: Stringent Privacy Standards, Law Enforcement, Control on data location
+4) Transparency: How Microsoft secures customer data, how it manages data location, and who in Microsoft can access data.
+
+Six Functional Areas:
+1) Operations: Security & Audit Dashboard, Azure Resource Manager, Azure Security Center
+2) Applications: Web Application Vulnerability Scanning, Penetration Testing, Web Application Firewall
+3) Storage: Role-Based Access Control, Shared Access Signature, Encryption
+4) Networking: Network Layer Controls, Network Security Groups
+5) Compute: Antimalware & Antivirus, Hardware Security Modules, Virtual Machine Backup
+6) Identity: Secure Identity, Secure Apps & Data
 
 ### Azure Key Vault
+Cloud-hosted management service which allows users the ability to encrypt keys and small secrets.  Neither applications, nor Microsoft has access to keys stored in Azure Key Vault.  Azure Key Vault provides secrets, keys, and certificates management, and storage of secrets is backed by Hardware Security.
 
-### Azure Information Protection
+### Azure Information Protection (AIP)
+Azure Information Protection (AIP) is a cloud based service which allows users to label/classify/protect documents and emails.  Labels ca be applied automatically by administrators, manually by users, or a combination of both.  Metadata is also attached to documents which allows other systems to work with labeled documents.  AIP uses Azure Rights Management to protect data.  You can use Right Management Templates to more easily apply labels to documents.
 
-### Azure Advanced Threat Protection
+### Azure Advanced Threat Protection (ATP)
+Azure Advanced Thread Protection is a cloud based security solution which allows admins to investigate advanced threats, compromised identities, and malicious insider actions as well as user activities across the network.  It uses adaptive baselining to detect advanced threats before they occur through use of learning based analytics.
 
 ## Azure Governance Methodologies
+_Governance_ validates that an organization can achieve its goals through effective & efficient use of IT.
 
 ### Azure Policies
+Azure Policy is a service which can be used to create, assign, and manage policies and enforces rules and effects over resources.  It ensures that resources remain compliant with corporate standards and SLAs.  
+
+Policy differs from RBAC as RBAC focuses on user actions at different scopes.  Azure policies focus on resource properties during deployment such as types or locations of resources.  Azure policies default to Allow & Explicit Deny.
 
 ### Initiatives
+An Initiative is a collection of policy definitions tailored towards achieving a singular overarching goal.  It simplifies managing & assigning policy definitions.  An _Initiative Assignment_ is an Initiative Definition assigned to a specific scope.  _Initiative Parameters_ are used by the policy definitions within the initiative.
 
 ### Role-Based Access Control (RBAC)
+RBAC is an authorization system built on Azure Resource Manager, and provides fine-grained access management of resources in Azure.  i.e. a network administrator having access to network resources on Azure and a database administrator having access to databases on Azure.  RBAC can also apply to applications needing access to resource groups.
+
+_Security Principal:_ is a user, group, service principal, or managed identity that is requesting access to Azure resources.
+
+_Role Definition:_ is a collection of permissions, and lists the operations that can be performed.
+
+_Scope:_ is the boundary that the access applies to, and can be specified at multiple levels.  In Azure, it is hierarchical.
+
+_Role Assignment:_ are attaching a role definition to a user, group, service principal, or managed identity at a particular scope.
+
+Four Default Roles:
+1) Owner: Full access to resources
+2) Contributor: Create / Manage all types of Azure resources, cannot grant access to other users
+3) Reader: View existing resources
+4) User Access Administrator: Manager users access to Azure resources
+
+There are many other more specific roles that can be used, i.e. SQL Database Administrator.
 
 ### Locks
+Locks are used to prevent other users from accidentally deleting or modifying critical resources.  You can set the lock level to CanNotDelete or ReadOnly.  Applying a lock in a parent scope applies it to all child resources.  Management locks apply to a user group or role.  Only Owner and User Access Administrator roles can provision locks.
 
 ### Azure Advisor Security Assistance
+Azure Advisor Security Assistance is a consolidated list view of recommendations that is integrated with Azure Security Center.
 
 ## Monitoring and Reporting
 
 ### Azure Monitor
+Azure Monitor is a service that maximizes availability and performance of applications by collecting, analyzing, and acting on telemetry.  The data that Azure monitor collects can be broken down into _Metrics_ and _Logs_.  Log data that is collected is stored in _Log Analytics_.  Log Analytics supports a rich query language to quickly retrieve, consolidate, and analyze collected data.
+
+Azure Monitor Collects: 
+1) Application Monitoring Data
+2) Guest OS Monitoring Data
+3) Azure Resource Monitoring Data
+4) Azure Subscription Monitoring Data
+5) Azure Tenant Data
 
 ### Azure Service Health
+Provides a personalized guidance and support of Azure service resources.  
+
+Areas:
+1) Azure Status: A global view of the health of Azure resources
+2) Service Health: A personalized view of the health of Azure
+3) Resource Health: A deeper view of the health of individual resources provided.
+
+Benefits:
+1) Personalized Dashboard
+2) Receive Guidance & Support
+3) Targeted Notifications
+4) Shared Details and Updates Easily
 
 ## Privacy, Compliance, and Data Protection Standards
 
-### GDPR
+### General Data Protection Regulation (GDPR)
+
 
 ### ISO
 
+
 ### NIST
+
 
 ### Trust Center
 
+
 ### Service Trust Portal
+
 
 ### Compliance Manager
 
+
 ### Azure Government Services
 
+
 ## Azure Subscriptions
+
 
 ## Planning and Management of Costs
 
 ### Azure Free Accounts
 
+
 ### Resource Pricing
+
 
 ### Pricing Calculator
 
+
 ## Support Options
+
 
 ## Azure Service Level Agreements (SLAs)
