@@ -500,41 +500,49 @@ Benefits:
 ## Privacy, Compliance, and Data Protection Standards
 
 ### General Data Protection Regulation (GDPR)
+A regulation in EU law on data protection and privacy for all individuals within the EU and EEA.  It addresses the export of personal data outside of the EU & EEA areas and aims to give control to individuals over their own personal data.  Controllers of personal data must put in place appropriate technical and organizational methods to implement the data protection principles.
 
+### International Organization or Standardization (ISO)
+The ISO is an independent, non-governmental, international standards organization.  It facilitates world trade by providing common standards between nations.
 
-### ISO
-
-
-### NIST
-
+### National Institute of Standards and Technology (NIST)
+NIST provides many of the security controls that software complies too.  It generally is applicable to federal information systems.
 
 ### Trust Center
+The Microsoft Trust Center provides organizations with a dashboard to understand how they implement security, privacy, compliance, and transparency.  It also provides a complete GDPR assessment.
 
-
-### Service Trust Portal
-
+### Service Trust Portal (STP)
+Provides a variety of content, tools, and other resources about Microsoft security, privacy, and compliance practices.  You'll also have to sign an NDA for Microsoft Compliance materials.  
 
 ### Compliance Manager
-
+Compliance manager is a workflow-based risk assessment tool to track, assign, and verify regulatory compliance.  It combines detailed information provided by Microsoft to auditors and regulators to create a compliance score.  You can also create excel reports and upload and manage compliance documentation.
 
 ### Azure Government Services
-
+U.S. government agencies can leverage Microsoft Azure Government services for government regulated requriements.  It delivers a dedicated cloud that is disconnected from the public cloud and only located in the U.S.  It utilizes the same technologies as the global Azure.  
 
 ## Azure Subscriptions
+An Azure subscription is an active agreement with Microsoft.  Every subscription has an active relationship with the AD.  If an Azure subscription is expired or stops, child resources will also stop.  Organizations can have multiple subsrciptions.  
 
-
-## Planning and Management of Costs
-
-### Azure Free Accounts
-
+### Planning and Management of Costs
+You can buy Azure directly through Microsoft or another third party partner.  You will ge a monthly bill for services that you can consume.  Large organizations should add Azure to an Enterprise Agreement (EA).
 
 ### Resource Pricing
-
+Each Azure product or service has its own pricing structure.  Some are per-second, some are as you use, and some are one-time purchases.  You can go to [https://azure.microsoft.com/en-us/pricing/] to see the pricing for all services in Azure as well as examples.
 
 ### Pricing Calculator
+Azure pricing calculator is a tool to estimate the cost of an Azure resource at [https://azure.microsoft.com/en-us/pricing/calculator]
 
+The _Total Cost of Ownership Calculator_ helps you estimate the savings from migrating your infrastructure to the cloud. [https://azure.microsoft.com/en-us/pricing/tco/calculator/]
 
-## Support Options
+_Azure Cost Management_ helps you analyze cloud costs, budget, and make decisions for reducing cloud costs.  You can set triggers on resources to shutdown or resize resources when thresholds are met.
 
+### Support Options
+Microsoft Azure provides 5 support plans.
+1) Basic: available to all microsoft account owners.
+2) Developer: trial and non-production environments
+3) Standard: production workload environments
+4) Professional Direct: business critical dependencies on Azure
+5) Premier: organization with substantial dependence on Azure products.
 
-## Azure Service Level Agreements (SLAs)
+### Azure Service Level Agreements (SLAs)
+A SLA describes the commitments to uptime or connectivity for a resource.  If Microsoft does not deliver on a SLA, you may be eligible for a credit for the resource being used.  
