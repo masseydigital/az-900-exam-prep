@@ -138,7 +138,7 @@ The hybrid cloud is the best of both worlds.  It utilizes both on-prem and publi
 An _azure region_ is a set of data centers that are connected within a latency-defined perimeter network.  As of this tutorial, there are 42 regions around the world with an additional 12 announced.  _Azure Geographies_ are areas of the world that contain at least one Azure Region.  _Regional Pairs_ are two regions that are connected in the same geography.  This allows Azure to provide updates that do not shut down a region.  At least one region in each pair will be prioritized for recovery.  
 
 ### Availability Zones
-_Azure Availability Zones_ are ne or more physical locations within an Azure Region that provides independent power, cooling, and networking.  There are a minimum of (3) separate zones in all enabled regions.  The purpose of this is to protect applications from datacenter failures.
+_Azure Availability Zones_ are one or more physical locations within an Azure Region that provides independent power, cooling, and networking.  There are a minimum of (3) separate zones in all enabled regions.  The purpose of this is to protect applications from datacenter failures.
 
 ### Resource Groups
 An _Azure Resource Group_ holds related resources for an Azure solution.  Developers choose which resource group resources go into.  Each resource can only exist in one resource group.
